@@ -87,6 +87,10 @@ h2 {
 p {
   margin: 0 0 14px;
 }
+main p {
+  text-align: justify;
+  hyphens: auto;
+}
 
 a {
   color: var(--text);
@@ -132,6 +136,46 @@ nav a {
   display: block;
   color: var(--muted);
   font-size: 0.9em;
+}
+
+/* Talks */
+
+.talk {
+  margin: 0 0 20px;
+  padding: 18px 22px;
+  background: var(--panel);
+  border-radius: 6px;
+}
+.talk h3 {
+  font-size: 1.05em;
+  line-height: 1.35;
+  margin: 0 0 4px;
+}
+.talk .speaker {
+  margin: 0 0 12px;
+  text-align: left;
+}
+.talk .speaker .affil {
+  color: var(--muted);
+  font-size: 0.9em;
+}
+.talk .speaker .affil::before {
+  content: "\00b7  ";
+}
+.talk p {
+  font-size: 0.95em;
+}
+.talk p:last-child {
+  margin-bottom: 0;
+}
+.talk .joint,
+.talk .tba {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 /* Registration */

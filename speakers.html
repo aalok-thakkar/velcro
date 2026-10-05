@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Speakers: VeLCrO</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./webpage_files/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+      onload="renderMathInElement(document.body, {delimiters: [{left: '$', right: '$', display: false}]});"
+    ></script>
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <h1><a href="./index.html">VErification, Logic, and CRyptOgraphy</a></h1>
+        <p class="tagline">December 11 &middot; Chennai Mathematical Institute</p>
+        <nav>
+          <a href="./index.html">Workshop</a>
+          <a href="./speakers.html" aria-current="page">Speakers</a>
+          <a href="./register.html">Registration</a>
+        </nav>
+      </header>
+
+      <main>
+        <h2>Talks and abstracts</h2>
+
+        <article class="talk" id="balasubramanian">
+          <h3>Title to be announced</h3>
+          <p class="speaker">A. R. Balasubramanian <span class="affil">Max Planck Institute for Software Systems</span></p>
+        </article>
+
+        <article class="talk" id="brice">
+          <h3>Dicey Games: Shared Sources of Randomness in Distributed Systems</h3>
+          <p class="speaker">Léonard Brice <span class="affil">Institute of Science and Technology Austria</span></p>
+          <p>
+            Systems that interact synchronously with an unpredictable environment are usually captured by
+            zero-sum concurrent games. In such games, randomised strategies are in general more powerful than
+            deterministic ones. Such systems, however, do not capture faithfully decentralised systems that
+            cannot resort to a common private source of randomness. In this talk, I will introduce dicey
+            games, a model for games played by teams, where the structure of randomness sources accessible to
+            each player is explicitly specified.
+          </p>
+        </article>
+
+        <article class="talk" id="rino">
+          <h3>Intersecting Dense Automata: Constructions, Complexity and Certificates</h3>
+          <p class="speaker">Neha Rino <span class="affil">University of Warwick</span></p>
+          <p>
+            Given $k$ nondeterministic finite automata (NFA), finding an NFA that recognises the intersection
+            of their languages is a basic problem in automata theory. We observe that the classical Cartesian
+            product construction is non-optimal in the worst case, that is, if the automata have many
+            transitions. For a fixed alphabet, the Cartesian product of two NFA may have $\Theta(m^2)$
+            transitions if these NFA have at most $n$ states and $m$ transitions each.
+          </p>
+          <p>
+            In this talk, we describe alternative constructions with $O(mn)$ transitions; or
+            $O(mn^{k-1})$ for the intersection of $k$ NFA (for fixed $k \geq 2$ and alphabet $\Sigma$).
+            This gives a faster algorithm for deciding NFA intersection emptiness, that is, deciding whether
+            $k$ given NFA accept a word in common.
+          </p>
+          <p>
+            We also show that this new algorithm is optimal, unless there exists a breakthrough combinatorial
+            algorithm for detecting cliques in undirected graphs.
+          </p>
+          <p class="joint">Joint work with Dmitry Chistikov.</p>
+        </article>
+
+        <article class="talk" id="sarkar">
+          <h3>Clustering in Varying Metrics</h3>
+          <p class="speaker">Ankita Sarkar <span class="affil">Ashoka University</span></p>
+          <p>
+            We consider a variant of center-based <span class="nowrap">$k$-clustering</span> in which the underlying metric space
+            varies; this is modeled as $T$ different distance functions $d_1$, $d_2$, $\ldots$, $d_T$ on the same
+            point set $C$. The goal is to pick a <span class="nowrap">$k$-sized</span> subset $S \subseteq C$ such that, with $S$ as the
+            cluster centers, some &ldquo;aggregate&rdquo; cost across the $T$ metric spaces is minimized. Such
+            an aggregate cost can be, for example, the sum of the $T$ many <span class="nowrap">$k$-center</span> costs that $S$ incurs in
+            each metric. This problem models, for example, the task of locating new hospitals in an area prone
+            to monsoon-based road closures. More broadly, this aggregate variant models center-based
+            clustering tasks where distances are seasonal but the choice of centers is inflexible. In this
+            talk, we understand the inapproximability and special-case approximability of a few different
+            aggregate <span class="nowrap">$k$-clustering</span> problems, and encounter related open problems.
+          </p>
+        </article>
+
+        <article class="talk" id="shankar">
+          <h3>Bounds on Polynomial Approximations for the Discrete Logarithm</h3>
+          <p class="speaker">Ashutosh Shankar <span class="affil">TIFR, Mumbai</span></p>
+          <p class="tba">Abstract to be announced.</p>
+        </article>
+
+        <article class="talk" id="yeo">
+          <h3>New Approaches to Liquid Democracy</h3>
+          <p class="speaker">Michelle Yeo <span class="affil">Aarhus University and NTU</span></p>
+          <p>
+            Liquid democracy is a transitive vote delegation mechanism over voting graphs. A central question
+            in the sphere of delegated voting is when does liquid democracy outperform direct voting. In this
+            talk, I will examine this question from two perspectives. In the first, I will look at liquid
+            democracy in a setting with a ground truth voting outcome. Previously, Kahng et al. showed that it
+            is impossible for liquid democracy to always outperform direct voting in general voting graphs in
+            this setting. Specifically, there are graph topologies that result in every voter delegating their
+            voters to a &ldquo;dictator&rdquo;, which can have a potential negative impact on the final voting
+            result. In this talk, I will show positive results for liquid democracy for specific graph
+            topologies. A common feature of these graph topologies is that they preserve a certain amount of
+            variance in the delegation process, which has implications on fairness in voting graphs. In the
+            second perspective, I will examine liquid democracy when there is no ground truth voting outcome,
+            and instead two opposing factions. I will show an interesting result that vote delegation enables
+            the weaker faction to win the election with higher probability compared to direct voting,
+            implying that delegation can be fairer than direct voting for the weaker faction.
+          </p>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
