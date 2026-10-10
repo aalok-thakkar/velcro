@@ -71,6 +71,31 @@
           <p class="joint">Joint work with Dmitry Chistikov.</p>
         </article>
 
+        <article class="talk" id="sadhukhan">
+          <h3>Decoupled Planning for Multiple Omega-Regular Objectives</h3>
+          <p class="speaker">Suman Sadhukhan <span class="affil">TU Clausthal</span></p>
+          <p>
+            Imagine you need to generate a path on a graph that satisfies several $\omega$-regular objectives
+            at once. The standard approach is to build one monolithic plan for their conjunction. But what if
+            one of the objectives is replaced? Do we have to redesign the plan from scratch? In this talk, I
+            will explore a more modular alternative: give each objective to its own agent, let each agent pick
+            a local policy, and have a scheduler, who knows nothing about the graph or the objectives, decide
+            on the fly whose policy to follow at each step.
+          </p>
+          <p>
+            The question I&rsquo;ll focus on is simple to state: assuming the conjunction of all objectives is
+            realizable, when does this kind of composition actually satisfy all of them?
+          </p>
+          <p>
+            I&rsquo;ll show that scheduling alone isn&rsquo;t enough, even with randomization, and that agents
+            need some coordination, and a synchronization protocol for safety. I&rsquo;ll then introduce
+            <em>conventions</em>, simple rules agreed on before the graph or objectives are known, that
+            guarantee all objectives are met, and discuss how much information each class of objectives
+            requires, from Büchi to parity.
+          </p>
+          <p class="joint">Joint work with Guy Avni, Kaushik Mallik, and Thejaswini K S.</p>
+        </article>
+
         <article class="talk" id="sarkar">
           <h3>Clustering in Varying Metrics</h3>
           <p class="speaker">Ankita Sarkar <span class="affil">Ashoka University</span></p>
