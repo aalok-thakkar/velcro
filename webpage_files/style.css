@@ -177,23 +177,3 @@ nav a {
 .nowrap {
   white-space: nowrap;
 }
-
-/* Registration */
-
-.button {
-  display: inline-block;
-  padding: 8px 18px;
-  border: 1px solid var(--text);
-  border-radius: 4px;
-}
-main a.button:hover {
-  background: var(--text);
-  color: #fff;
-}
-
-.form {
-  background: var(--panel);
-  border-radius: 6px;
-  padding: 8px;
-  margin: 0;
-}
