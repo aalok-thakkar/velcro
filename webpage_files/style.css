@@ -138,38 +138,70 @@ nav a {
   font-size: 0.9em;
 }
 
-/* Talks */
+/* Schedule */
 
-.talk {
-  margin: 0 0 20px;
-  padding: 18px 22px;
-  background: var(--panel);
-  border-radius: 6px;
-}
-.talk h3 {
-  font-size: 1.05em;
-  line-height: 1.35;
-  margin: 0 0 4px;
-}
-.talk .speaker {
-  margin: 0 0 12px;
+.talk,
+.slot {
+  display: grid;
+  grid-template-columns: 6.5em 1fr;
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
   text-align: left;
 }
-.talk .speaker .affil {
+.slot {
+  color: var(--muted);
+}
+.time {
   color: var(--muted);
   font-size: 0.9em;
+  font-variant-numeric: tabular-nums;
+}
+.talk .time {
+  margin: 0;
+  text-align: left;
+  line-height: 1.7;
+}
+.talk h3 {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.35;
+  margin: 0;
+}
+.talk .speaker {
+  display: block;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9em;
+  text-align: left;
 }
 .talk .speaker .affil::before {
   content: "\00b7  ";
 }
+.talk > .speaker,
+.talk > h3 {
+  grid-column: 2;
+}
+.talk > .time {
+  grid-row: 1 / span 2;
+}
+.talk summary {
+  cursor: pointer;
+  list-style: none;
+}
+.talk summary::-webkit-details-marker {
+  display: none;
+}
+.talk summary:hover h3 {
+  background: var(--link-hover);
+}
+.talk details[open] summary {
+  margin-bottom: 10px;
+}
 .talk p {
   font-size: 0.95em;
 }
-.talk p:last-child {
-  margin-bottom: 0;
-}
-.talk .joint,
-.talk .tba {
+.talk .joint {
   color: var(--muted);
   font-style: italic;
 }

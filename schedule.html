@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Schedule: VeLCro</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./webpage_files/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+      onload="renderMathInElement(document.body, {delimiters: [{left: '$', right: '$', display: false}]});"
+    ></script>
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <h1><a href="./index.html">VErification, Logic, and CRyptOgraphy</a></h1>
+        <p class="tagline">December 11 &middot; Chennai Mathematical Institute</p>
+        <nav>
+          <a href="./index.html">Workshop</a>
+          <a href="./schedule.html" aria-current="page">Schedule</a>
+        </nav>
+      </header>
+
+      <main>
+        <h2>Schedule</h2>
+
+        <p class="slot"><span class="time">10:00–10:20</span> Welcome coffee</p>
+
+        <article class="talk" id="rino">
+          <p class="time">10:20–10:45</p>
+          <details>
+            <summary>
+              <h3>Intersecting Dense Automata: Constructions, Complexity and Certificates</h3>
+              <span class="speaker">Neha Rino <span class="affil">University of Warwick</span></span>
+            </summary>
+            <p>
+              Given $k$ nondeterministic finite automata (NFA), finding an NFA that recognises the intersection
+              of their languages is a basic problem in automata theory. We observe that the classical Cartesian
+              product construction is non-optimal in the worst case, that is, if the automata have many
+              transitions. For a fixed alphabet, the Cartesian product of two NFA may have $\Theta(m^2)$
+              transitions if these NFA have at most $n$ states and $m$ transitions each.
+            </p>
+            <p>
+              In this talk, we describe alternative constructions with $O(mn)$ transitions; or
+              $O(mn^{k-1})$ for the intersection of $k$ NFA (for fixed $k \geq 2$ and alphabet $\Sigma$).
+              This gives a faster algorithm for deciding NFA intersection emptiness, that is, deciding whether
+              $k$ given NFA accept a word in common.
+            </p>
+            <p>
+              We also show that this new algorithm is optimal, unless there exists a breakthrough combinatorial
+              algorithm for detecting cliques in undirected graphs.
+            </p>
+            <p class="joint">Joint work with Dmitry Chistikov.</p>
+          </details>
+        </article>
+
+        <article class="talk" id="sarkar">
+          <p class="time">10:55–11:20</p>
+          <details>
+            <summary>
+              <h3>Clustering in Varying Metrics</h3>
+              <span class="speaker">Ankita Sarkar <span class="affil">Ashoka University</span></span>
+            </summary>
+            <p>
+              We consider a variant of center-based <span class="nowrap">$k$-clustering</span> in which the underlying metric space
+              varies; this is modeled as $T$ different distance functions $d_1$, $d_2$, $\ldots$, $d_T$ on the same
+              point set $C$. The goal is to pick a <span class="nowrap">$k$-sized</span> subset $S \subseteq C$ such that, with $S$ as the
+              cluster centers, some &ldquo;aggregate&rdquo; cost across the $T$ metric spaces is minimized. Such
+              an aggregate cost can be, for example, the sum of the $T$ many <span class="nowrap">$k$-center</span> costs that $S$ incurs in
+              each metric. This problem models, for example, the task of locating new hospitals in an area prone
+              to monsoon-based road closures. More broadly, this aggregate variant models center-based
+              clustering tasks where distances are seasonal but the choice of centers is inflexible. In this
+              talk, we understand the inapproximability and special-case approximability of a few different
+              aggregate <span class="nowrap">$k$-clustering</span> problems, and encounter related open problems.
+            </p>
+            <p class="joint">Joint work with Deeparnab Chakrabarty and Jonathan Conroy.</p>
+          </details>
+        </article>
+
+        <p class="slot"><span class="time">11:20–11:40</span> Break</p>
+
+        <article class="talk" id="sadhukhan">
+          <p class="time">11:40–12:05</p>
+          <details>
+            <summary>
+              <h3>Decoupled Planning for Multiple Omega-Regular Objectives</h3>
+              <span class="speaker">Suman Sadhukhan <span class="affil">TU Clausthal</span></span>
+            </summary>
+            <p>
+              Imagine you need to generate a path on a graph that satisfies several $\omega$-regular objectives
+              at once. The standard approach is to build one monolithic plan for their conjunction. But what if
+              one of the objectives is replaced? Do we have to redesign the plan from scratch? In this talk, I
+              will explore a more modular alternative: give each objective to its own agent, let each agent pick
+              a local policy, and have a scheduler, who knows nothing about the graph or the objectives, decide
+              on the fly whose policy to follow at each step.
+            </p>
+            <p>
+              The question I&rsquo;ll focus on is simple to state: assuming the conjunction of all objectives is
+              realizable, when does this kind of composition actually satisfy all of them?
+            </p>
+            <p>
+              I&rsquo;ll show that scheduling alone isn&rsquo;t enough, even with randomization, and that agents
+              need some coordination, and a synchronization protocol for safety. I&rsquo;ll then introduce
+              <em>conventions</em>, simple rules agreed on before the graph or objectives are known, that
+              guarantee all objectives are met, and discuss how much information each class of objectives
+              requires, from Büchi to parity.
+            </p>
+            <p class="joint">Joint work with Guy Avni, Kaushik Mallik, Thejaswini K S, and Thomas A. Henzinger.</p>
+          </details>
+        </article>
+
+        <article class="talk" id="brice">
+          <p class="time">12:15–12:40</p>
+          <details>
+            <summary>
+              <h3>Dicey Games: Shared Sources of Randomness in Distributed Systems</h3>
+              <span class="speaker">Léonard Brice <span class="affil">Institute of Science and Technology Austria</span></span>
+            </summary>
+            <p>
+              Systems that interact synchronously with an unpredictable environment are usually captured by
+              zero-sum concurrent games. In such games, randomised strategies are in general more powerful than
+              deterministic ones. Such systems, however, do not capture faithfully decentralised systems that
+              cannot resort to a common private source of randomness. In this talk, I will introduce dicey
+              games, a model for games played by teams, where the structure of randomness sources accessible to
+              each player is explicitly specified.
+            </p>
+          </details>
+        </article>
+
+        <p class="slot"><span class="time">12:40–14:00</span> Lunch</p>
+
+        <article class="talk" id="sricharan">
+          <p class="time">14:00–14:25</p>
+          <details>
+            <summary>
+              <h3>Single Electrical Routing is an Optimal Oblivious Routing</h3>
+              <span class="speaker">A. R. Sricharan <span class="affil">University of Macau</span></span>
+            </summary>
+            <p>
+              Given a network and many packet demands to route, an optimal solution can be found by solving a
+              multicommodity flow problem when the demands are known beforehand. If the demands arrive online,
+              the best solution would be to perform a demand-aware routing, which remembers how all previous
+              requests were routed when routing the current request. A simple-to-implement alternative, which
+              routes each demand independent of all others, is an oblivious routing.
+            </p>
+            <p>
+              Examples include maintaining a set of $\Omega(m)$ spanning trees, then randomly selecting a tree
+              and routing along the unique tree path, or maintaining a set of $\Omega(\sqrt{m})$ resistance
+              assignments to the edges, then randomly selecting one and routing the request as if the graph was
+              an electrical network. For constructing a single object and not a set to sample from, the best
+              known result is to maintain a dominating tree on the vertices, which gives
+              $O(\log^2 n \log \log n)$ competitive ratio. We show that there is a single setting of resistances
+              that can be imposed on the network which achieves optimal $O(\log n)$ competitive ratio for
+              oblivious routing.
+            </p>
+          </details>
+        </article>
+
+        <article class="talk" id="balasubramanian">
+          <p class="time">14:35–15:00</p>
+          <details>
+            <summary>
+              <h3>The Complexity of Nested Reset Counter Systems</h3>
+              <span class="speaker">A. R. Balasubramanian <span class="affil">Max Planck Institute for Software Systems</span></span>
+            </summary>
+            <p>
+              Nested counter systems (NCS) are a generalization of counter systems to higher-order counters.
+              Here, a higher-order counter is allowed to have other (lower-order) counters as elements, instead
+              of just a number. Such systems can be viewed as working on trees, where the height of the tree
+              naturally corresponds to the highest order counter that the system is working with. It is known
+              that the coverability problem for NCS, which asks if a given final tree can be covered from a
+              given initial tree, is <span class="nowrap">$F_{\epsilon_0}$-complete</span>. Here
+              $F_{\epsilon_0}$ is a class in the fast-growing hierarchy of complexity classes.
+            </p>
+            <p>
+              In this work, we consider an extension of NCS called nested reset counter systems (NRCS) that
+              extends NCS with resets. We show that coverability for NRCS over
+              <span class="nowrap">order-$k$</span> counters is
+              <span class="nowrap">$F_{\Omega_k}$-complete</span> where $\Omega_k$ is the tower of height $k$ of
+              the $\omega$ ordinal. This gives the first natural hierarchy of complete problems for all of these
+              classes. Furthermore, to prove our upper bounds, we also develop length function theorems for any
+              fixed amount of applications of the multiset operation on finite sets.
+            </p>
+            <p>
+              As an application of our results, we improve existing upper bounds for various problems from XML
+              processing, graph transformation systems, <span class="nowrap">$\pi$-calculus</span>, logic and
+              parameterized verification. Furthermore, using our completeness results for
+              <span class="nowrap">$k$-NRCS</span>, we also prove
+              <span class="nowrap">$F_{\Omega_k}$-completeness</span> of the considered problems from the realms
+              of parameterized verification and logic, for all $k$.
+            </p>
+            <p class="joint">Joint work with Franzisco Schmidt.</p>
+          </details>
+        </article>
+
+        <p class="slot"><span class="time">15:00–15:30</span> Break</p>
+
+        <article class="talk" id="shapiro">
+          <p class="time">15:30–15:55</p>
+          <details>
+            <summary>
+              <h3>Category Theory and Topology for Logic and Verification</h3>
+              <span class="speaker">Brandon Shapiro <span class="affil">Florida Gulf Coast University</span></span>
+            </summary>
+            <p>
+              Homotopy Type Theory, broadly construed, uses syntax rules from computer science as a system for
+              verifiable constructions and proofs about &ldquo;types&rdquo; which can model a wide range of
+              algebraic and spatial structures from mathematics. This talk will survey these ideas and their
+              wide-ranging applications for a computer science audience.
+            </p>
+          </details>
+        </article>
+
+        <article class="talk" id="yeo">
+          <p class="time">16:05–16:30</p>
+          <details>
+            <summary>
+              <h3>New Approaches to Liquid Democracy</h3>
+              <span class="speaker">Michelle Yeo <span class="affil">Aarhus University and NTU</span></span>
+            </summary>
+            <p>
+              Liquid democracy is a transitive vote delegation mechanism over voting graphs. A central question
+              in the sphere of delegated voting is when does liquid democracy outperform direct voting. In this
+              talk, I will examine this question from two perspectives. In the first, I will look at liquid
+              democracy in a setting with a ground truth voting outcome. Previously, Kahng et al. showed that it
+              is impossible for liquid democracy to always outperform direct voting in general voting graphs in
+              this setting. Specifically, there are graph topologies that result in every voter delegating their
+              voters to a &ldquo;dictator&rdquo;, which can have a potential negative impact on the final voting
+              result. In this talk, I will show positive results for liquid democracy for specific graph
+              topologies. A common feature of these graph topologies is that they preserve a certain amount of
+              variance in the delegation process, which has implications on fairness in voting graphs. In the
+              second perspective, I will examine liquid democracy when there is no ground truth voting outcome,
+              and instead two opposing factions. I will show an interesting result that vote delegation enables
+              the weaker faction to win the election with higher probability compared to direct voting,
+              implying that delegation can be fairer than direct voting for the weaker faction.
+            </p>
+          </details>
+        </article>
+
+        <article class="talk" id="anand">
+          <p class="time">16:40–17:05</p>
+          <h3>Prompt Runtime Enforcement</h3>
+          <p class="speaker">Ayush Anand</p>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
