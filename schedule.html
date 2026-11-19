@@ -244,8 +244,31 @@
 
         <article class="talk" id="shankar">
           <p class="time">16:40–17:05</p>
-          <h3>Bounds on Polynomial Approximations for the Discrete Logarithm</h3>
-          <p class="speaker">Ashutosh Shankar <span class="affil">TIFR, Mumbai</span></p>
+          <details>
+            <summary>
+              <h3>Bounds on Polynomial Approximations for the Discrete Logarithm</h3>
+              <span class="speaker">Ashutosh Shankar <span class="affil">TIFR, Mumbai</span></span>
+            </summary>
+            <p>
+              The discrete logarithm function is widely used in cryptography and hence its algebraic
+              properties are of interest. A classical result of Coppersmith and Shparlinski shows bounds on
+              how well polynomials can approximate the discrete logarithm function. They showed that any
+              univariate polynomial $f(X) \in \mathbb{F}_p[X]$ with $\deg(f) \leq D$ can agree with the
+              discrete logarithm on at most $\sqrt{2 D p}$ points.
+            </p>
+            <p>
+              In our work, we improve the upper bound above to $(1+o(1)) \cdot \sqrt{Dp}$. This new upper
+              bound is the Johnson bound from the theory of list-decoding of error-correcting codes, and in
+              fact our proof uses a connection to that problem. [CS00] also define an analogue of the problem
+              with bivariate polynomials, and we improve that bound as well.
+            </p>
+            <p>
+              Additionally, for $D = 1$, where both the above bounds are $O(\sqrt{p})$, we give an
+              asymptotically improved upper bound of $O(p^{2/5})$. In our proofs, we use various connections
+              to additive combinatorics.
+            </p>
+            <p class="joint">Joint work with Swastik Kopparty and Rishabh Kothary.</p>
+          </details>
         </article>
       </main>
     </div>
